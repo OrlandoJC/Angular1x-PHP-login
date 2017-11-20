@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="angular-validator">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/sweetalert.css"/>
+</head>
+<body ng-controller ="ctrValidator">
+   
+    <div class="container">
+        <div class="col-lg-12">
+             <div style="margin-top: 150px" class="row">
+                    <div class="form-group">
+                            <label>User:</label>
+                            <input type="text" class="form-control" ng-model="usuarios.usuario"/>
+                    </div>
+                    <div class="form-group">
+                            <label>Password:</label>
+                            <input type="password" class="form-control" ng-model="usuarios.pass"/>
+                    </div>
+                    <div class="form-group">
+                            
+                        <button ng-click="validaUsuario()" class="btn btn-warning">
+                                <i class="fa fa-refresh"></i>
+                                Verificar
+                        </button>
+                    </div>   
+                </div>   
+         </div>                 
+    </div>
+
+
+ 
+    <script src="js/sweetalert.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="config/config.js"></script>
+    <script  src="controllers/ctrValidatorLogin.js"></script>
+</body>
+</html>
